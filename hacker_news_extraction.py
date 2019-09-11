@@ -4,8 +4,18 @@ from collections import namedtuple
 
 
 class HackerNewsExtractor:
+    """
+    This program downloads stories from the Hacker News API: https://github.com/HackerNews/API
+    For each of the top 30 stories, we want to have an output containing:
+     - The story title
+     - The top 10 commenters of that story.
+    For each commenter:
+    - The number of comments they made on the story.
+    - The total number of comments they made among all the top 30 stories.
+    """
 
-    url = "https://github.com/HackerNews/API"
+    # TODO We need the program to parallelize the requests and aggregate the results as efficiently as possible. This is one of the main aspects that our recruiting team will pay attention to when assessing your solution.
+
     top_story_url ="https://hacker-news.firebaseio.com/v0/topstories.json"
 
     def __init__(self):
@@ -66,12 +76,4 @@ class HackerNewsExtractor:
 
         return results
 
-#For each of the top 30 stories, we want to have an output containing:
-#•	The story title
-#•	The top 10 commenters of that story.
-#•	For each commenter:
-#•	The number of comments they made on the story.
-#•	The total number of comments they made among all the top 30 stories.
-
-#We need the program to parallelize the requests and aggregate the results as efficiently as possible. This is one of the main aspects that our recruiting team will pay attention to when assessing your solution.
 
