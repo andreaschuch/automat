@@ -5,6 +5,7 @@ Requires python 3.x
 python hacker_news_extraction.py
 
 For more information run
+
 python hacker_news_extraction.py --help
 
 # Run the unittests:
