@@ -103,7 +103,7 @@ class HackerNewsExtractor:
         """
         Extracts the following information from the internal storage (self.comments and self.titles):
         - id and title of each story
-        - user number of comments and
+        - top commenters as well their number of comments on the particular story and in total
         :param top_stories: Ids of the top stories. (List of int)
         :return: List of Namedtuples with the following fields: "id", "title", "users".
         The later is a namedtuple with the following fields: "name", "number_of_comments", "total_number_of_comments"
